@@ -16,6 +16,7 @@ Datheon Python Programming Internship · Task 4 · J. Risny Suha
 from __future__ import annotations
 
 import argparse
+import random
 import re
 import sys
 import time
@@ -90,6 +91,7 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--ask", help="answer one message and exit")
     parser.add_argument("--transcript", type=Path, help="save the conversation to this text file")
     parser.add_argument("--fast", action="store_true", help="no typing pause before answers")
+    parser.add_argument("--seed", type=int, help="fixed random seed, so replies repeat exactly (for testing)")
     parser.add_argument("--no-color", action="store_true", help="plain text output")
     args = parser.parse_args(argv)
     if args.no_color:
@@ -100,7 +102,7 @@ def main(argv: list[str] | None = None) -> int:
     except (OSError, ValueError, KeyError) as error:
         print(style(f"Could not load the knowledge base: {error}", "red"))
         return 1
-    bot = Chatbot(kb)
+    bot = Chatbot(kb, random.Random(args.seed))
     transcript = Transcript(args.transcript)
     delay = 0 if args.fast or args.ask else 0.45
 

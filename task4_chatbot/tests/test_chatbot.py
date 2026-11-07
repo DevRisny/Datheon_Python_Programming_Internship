@@ -140,9 +140,10 @@ def test_conversation_cli_with_transcript(tmp_path, monkeypatch, capsys):
     answers = iter(["hi", "my name is Risny", "how do I submit and when do I get my certificate", "more", "bye"])
     monkeypatch.setattr("builtins.input", lambda prompt="": next(answers))
     log = tmp_path / "chat.txt"
-    assert app.main(["--fast", "--no-color", "--transcript", str(log)]) == 0
+    assert app.main(["--fast", "--no-color", "--seed", "1", "--transcript", str(log)]) == 0
     out = capsys.readouterr().out
-    assert "Nice to meet you, Risny" in out and "Goodbye, Risny" in out
+    assert "Nice to meet you, Risny" in out
+    assert "Bye, Risny" in out or "Goodbye, Risny" in out
     saved = log.read_text(encoding="utf-8")
     assert "You: how do I submit" in saved and "**" not in saved
 
