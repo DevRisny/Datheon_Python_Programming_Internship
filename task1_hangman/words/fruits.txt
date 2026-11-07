@@ -1,0 +1,21 @@
+# Fruits
+mango
+papaya
+banana
+pineapple
+watermelon
+rambutan
+mangosteen
+jackfruit
+avocado
+pomegranate
+strawberry
+blueberry
+guava
+lychee
+passion fruit
+durian
+apricot
+coconut
+kiwi
+grape

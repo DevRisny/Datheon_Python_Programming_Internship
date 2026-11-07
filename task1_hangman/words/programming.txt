@@ -1,0 +1,25 @@
+# Programming
+python
+variable
+function
+algorithm
+recursion
+dictionary
+iterator
+exception
+debugging
+compiler
+database
+framework
+inheritance
+polymorphism
+encapsulation
+repository
+terminal
+boolean
+interpreter
+generator
+decorator
+asynchronous
+dependency
+abstraction

@@ -1,0 +1,41 @@
+ticker,company,sector,price
+AAPL,Apple Inc.,Information Technology,228.40
+MSFT,Microsoft Corp.,Information Technology,421.15
+NVDA,NVIDIA Corp.,Information Technology,138.60
+GOOGL,Alphabet Inc. (Class A),Communication Services,172.35
+META,Meta Platforms Inc.,Communication Services,566.80
+AMZN,Amazon.com Inc.,Consumer Discretionary,186.25
+TSLA,Tesla Inc.,Consumer Discretionary,251.90
+NFLX,Netflix Inc.,Communication Services,702.40
+ADBE,Adobe Inc.,Information Technology,512.30
+CRM,Salesforce Inc.,Information Technology,289.75
+ORCL,Oracle Corp.,Information Technology,171.20
+INTC,Intel Corp.,Information Technology,22.85
+AMD,Advanced Micro Devices,Information Technology,154.10
+CSCO,Cisco Systems Inc.,Information Technology,55.40
+IBM,International Business Machines,Information Technology,214.60
+JPM,JPMorgan Chase & Co.,Financials,224.15
+BAC,Bank of America Corp.,Financials,41.70
+V,Visa Inc.,Financials,288.90
+MA,Mastercard Inc.,Financials,503.25
+GS,Goldman Sachs Group,Financials,516.40
+BRK.B,Berkshire Hathaway (Class B),Financials,463.80
+JNJ,Johnson & Johnson,Health Care,159.30
+PFE,Pfizer Inc.,Health Care,28.65
+UNH,UnitedHealth Group,Health Care,586.20
+LLY,Eli Lilly and Co.,Health Care,812.45
+MRK,Merck & Co.,Health Care,101.30
+KO,Coca-Cola Co.,Consumer Staples,68.20
+PEP,PepsiCo Inc.,Consumer Staples,163.75
+WMT,Walmart Inc.,Consumer Staples,82.10
+COST,Costco Wholesale,Consumer Staples,887.60
+PG,Procter & Gamble,Consumer Staples,166.40
+MCD,McDonald's Corp.,Consumer Discretionary,293.85
+NKE,Nike Inc.,Consumer Discretionary,78.30
+DIS,Walt Disney Co.,Communication Services,96.45
+XOM,Exxon Mobil Corp.,Energy,118.70
+CVX,Chevron Corp.,Energy,152.90
+BA,Boeing Co.,Industrials,154.20
+CAT,Caterpillar Inc.,Industrials,377.50
+GE,GE Aerospace,Industrials,178.65
+NEE,NextEra Energy,Utilities,79.85

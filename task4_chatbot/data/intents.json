@@ -1,0 +1,325 @@
+{
+  "bot": {
+    "name": "Dex",
+    "role": "Datheon Student Support Assistant"
+  },
+  "intents": [
+    {
+      "tag": "hours",
+      "title": "Support hours",
+      "patterns": [
+        "\\b(opening|office|working|support|business) hours?\\b",
+        "\\bwhen (are|r) (you|u) (open|available)\\b",
+        "\\bwhat time .*(open|close)\\b",
+        "\\bhours of operation\\b"
+      ],
+      "keywords": [
+        "hours",
+        "open",
+        "timing",
+        "available",
+        "close",
+        "weekend",
+        "saturday",
+        "sunday",
+        "monday",
+        "friday"
+      ],
+      "responses": [
+        "Our team works **Monday to Friday, 9:00 AM – 6:00 PM IST**. Messages sent on weekends are answered on the next working day."
+      ],
+      "with_faq": "Messages sent on weekends are answered on the next working day.",
+      "more": "If it is urgent, email hello@datheon.in with your Application ID in the subject so the team can find you quickly."
+    },
+    {
+      "tag": "submit",
+      "title": "Submitting your project",
+      "patterns": [
+        "\\bhow (do|can|should) i submit\\b",
+        "\\bsubmi(t|ssion|tting)\\b",
+        "\\bwhere (do|to) (i )?(upload|send|paste)\\b"
+      ],
+      "keywords": [
+        "submit",
+        "submission",
+        "upload",
+        "send",
+        "repo",
+        "repository",
+        "github",
+        "link",
+        "deliver"
+      ],
+      "responses": [
+        "Push your code to a **public GitHub repository** named `Datheon_Python_Programming_Internship`, add a short README.md, then paste the link in the submission form in your **Student Workspace** and tick the tasks you completed."
+      ],
+      "with_faq": "Name the repo `Datheon_Python_Programming_Internship`, add a short README.md, and tick the tasks you completed in the form.",
+      "more": "You can edit or resubmit the link for **24 hours** after submitting. After that it is locked for evaluation, so double-check that every task is in the repo first."
+    },
+    {
+      "tag": "certificate",
+      "title": "Certificates",
+      "patterns": [
+        "\\bcertificat(e|es|ion)\\b",
+        "\\bwhen will i (get|receive)\\b",
+        "\\bcompletion (letter|proof)\\b"
+      ],
+      "keywords": [
+        "certificate",
+        "certification",
+        "credential",
+        "completion",
+        "qr",
+        "verified",
+        "receive",
+        "issued"
+      ],
+      "responses": [
+        "Certificates are reviewed and issued within **3–5 business days** after your code review. Each one is a **Verified Certificate of Completion** with a QR code anyone can scan to check it."
+      ],
+      "with_faq": "Each one is a **Verified Certificate of Completion** with a QR code anyone can scan to check it.",
+      "more": "Completing the project also qualifies you for a Performance Scorecard and an official Letter of Recommendation."
+    },
+    {
+      "tag": "tasks",
+      "title": "Tasks and requirements",
+      "patterns": [
+        "\\bhow many tasks?\\b",
+        "\\bwhich tasks?\\b",
+        "\\bwhat (are|r) the tasks?\\b",
+        "\\b(syllabus|curriculum)\\b"
+      ],
+      "keywords": [
+        "task",
+        "tasks",
+        "syllabus",
+        "curriculum",
+        "requirement",
+        "requirements",
+        "hangman",
+        "portfolio",
+        "organizer",
+        "chatbot",
+        "project"
+      ],
+      "responses": [
+        "The Python Programming Internship has **4 tasks**: a Hangman game, a Stock Portfolio Tracker, a File Organizer and a Rule-Based Chatbot. You need to complete **at least 2 or 3** of them."
+      ],
+      "more": "Open any task in your Student Workspace to see its full problem statement, suggested approach and the dataset to download."
+    },
+    {
+      "tag": "duration",
+      "title": "Duration and deadline",
+      "patterns": [
+        "\\bhow long\\b",
+        "\\b(deadline|due date|last date)\\b",
+        "\\bhow many (weeks|days)\\b",
+        "\\bwhen does it (start|end)\\b"
+      ],
+      "keywords": [
+        "deadline",
+        "duration",
+        "weeks",
+        "long",
+        "start",
+        "end",
+        "time",
+        "due",
+        "days",
+        "late"
+      ],
+      "responses": [
+        "The internship runs for **4 weeks (28 days)**. Your clock only starts when you click **Start Project** in the Student Workspace, and your exact deadline is shown at the top of the workspace."
+      ],
+      "more": "The four weeks are: Setup & Foundations, Core Engineering, Advanced Features, then Submission & Audit. It is self-paced, so you can finish early."
+    },
+    {
+      "tag": "fees",
+      "title": "Fees",
+      "patterns": [
+        "\\b(fee|fees|cost|price|pay|payment|charge|free)\\b"
+      ],
+      "keywords": [
+        "fee",
+        "fees",
+        "cost",
+        "price",
+        "pay",
+        "payment",
+        "charge",
+        "free",
+        "money"
+      ],
+      "responses": [
+        "Good news: there is **no enrollment fee and no evaluation fee**. The internship and the code review are free."
+      ],
+      "more": "If anyone asks you to pay to receive your Datheon certificate, please report it to hello@datheon.in."
+    },
+    {
+      "tag": "linkedin",
+      "title": "LinkedIn and recommendation letters",
+      "patterns": [
+        "\\blinked ?in\\b",
+        "\\b(lor|recommendation)\\b",
+        "\\btag\\b"
+      ],
+      "keywords": [
+        "linkedin",
+        "post",
+        "tag",
+        "lor",
+        "recommendation",
+        "letter",
+        "share",
+        "video",
+        "bonus"
+      ],
+      "responses": [
+        "Sharing a screenshot or demo video on **LinkedIn** and tagging **@Datheon** is an optional bonus, and it helps **top performers qualify for a Letter of Recommendation (LOR)**."
+      ],
+      "more": "Paste the post link in the 'LinkedIn Post URL' box of the submission form so the reviewers can see it."
+    },
+    {
+      "tag": "pause",
+      "title": "Pausing the internship",
+      "patterns": [
+        "\\bpause\\b",
+        "\\b(break|holiday|exam|exams|sick|leave)\\b"
+      ],
+      "keywords": [
+        "pause",
+        "break",
+        "exam",
+        "exams",
+        "holiday",
+        "sick",
+        "busy",
+        "leave",
+        "stop"
+      ],
+      "responses": [
+        "You can **pause** the internship from your Student Workspace (the Pause button at the top) if exams or other plans get in the way, and continue later."
+      ],
+      "more": "Pausing keeps all your work. Just remember to resume before your deadline."
+    },
+    {
+      "tag": "application_id",
+      "title": "Application ID and login",
+      "patterns": [
+        "\\bapplication id\\b",
+        "\\b(login|log in|sign in|access)\\b",
+        "\\bdt-2026\\b"
+      ],
+      "keywords": [
+        "application",
+        "id",
+        "login",
+        "sign",
+        "access",
+        "workspace",
+        "portal",
+        "dashboard",
+        "password"
+      ],
+      "responses": [
+        "Sign in to the **Student Workspace** with your registered email and your **Application ID** (it looks like `DT-2026-XXXXX`). There is no password."
+      ],
+      "more": "Can't find your ID? Search your mailbox for \"Datheon\" or \"DT-2026\" (it is in your offer letter), or email hello@datheon.in."
+    },
+    {
+      "tag": "contact",
+      "title": "Contacting the team",
+      "patterns": [
+        "\\b(contact|email|e-mail|reach|talk to|speak to|human|mentor|support team)\\b"
+      ],
+      "keywords": [
+        "contact",
+        "email",
+        "reach",
+        "human",
+        "mentor",
+        "support",
+        "phone",
+        "team",
+        "help desk",
+        "admissions"
+      ],
+      "responses": [
+        "You can reach the team at **hello@datheon.in** (general) or **admissions@datheon.in** (internship questions). You can also simply reply to any Datheon email."
+      ],
+      "more": "Please include your Application ID so they can find your workspace quickly."
+    },
+    {
+      "tag": "github_help",
+      "title": "GitHub help",
+      "patterns": [
+        "\\bhow (do|to) (i )?(create|make|push|use)\\b.*\\b(git|github|repo)",
+        "\\bpublic repo"
+      ],
+      "keywords": [
+        "git",
+        "github",
+        "push",
+        "commit",
+        "public",
+        "readme",
+        "clone",
+        "create",
+        "new repo"
+      ],
+      "responses": [
+        "Quick GitHub steps: **1)** github.com/new → name it `Datheon_Python_Programming_Internship` → Public. **2)** In your project folder: `git init`, `git add .`, `git commit -m \"Datheon tasks\"`. **3)** `git remote add origin <your repo URL>` then `git push -u origin main`."
+      ],
+      "more": "Make sure the repo is **Public** so the evaluators can open it, and add a README.md that explains each task."
+    },
+    {
+      "tag": "programs",
+      "title": "Other programs",
+      "patterns": [
+        "\\bother (programs?|internships?|courses?)\\b",
+        "\\bwhat (else|programs?) do you (offer|have)\\b"
+      ],
+      "keywords": [
+        "programs",
+        "internships",
+        "courses",
+        "catalog",
+        "offer",
+        "ai",
+        "data",
+        "web"
+      ],
+      "responses": [
+        "Datheon runs project-based internships in areas such as **Python programming, AI systems and automation**. You can browse every program in the **Catalog** on datheon.in."
+      ],
+      "more": "Each program follows the same model: choose tasks, build them, submit a public GitHub repo and get a verified certificate."
+    }
+  ],
+  "small_talk": {
+    "greeting": [
+      "Hello{name}! 👋 I'm Dex, Datheon's student support assistant. How can I help you today?",
+      "Hi{name}! I'm Dex. Ask me about tasks, submission, certificates, deadlines or anything about your internship."
+    ],
+    "how_are_you": [
+      "I'm running smoothly, thanks for asking{name}! How is your internship going?"
+    ],
+    "thanks": [
+      "You're welcome{name}! 😊 Anything else I can help with?",
+      "Happy to help{name}! Is there anything else?"
+    ],
+    "identity": [
+      "I'm **Dex**, a rule-based assistant. I match your words against patterns and keywords (no internet, no AI model) to answer questions about the Datheon internship."
+    ],
+    "name_saved": [
+      "Nice to meet you, {raw_name}! 🤝 What would you like to know?"
+    ],
+    "fallback": [
+      "Hmm, I'm not sure I understood that{name}.",
+      "Sorry{name}, I don't have an answer for that yet."
+    ],
+    "goodbye": [
+      "Goodbye{name}! 👋 Good luck with your project, you've got this!",
+      "Bye{name}! Happy coding and see you soon. 🚀"
+    ]
+  }
+}

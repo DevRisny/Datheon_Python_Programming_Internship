@@ -1,0 +1,4 @@
+# The four programs use only the Python standard library.
+# These are just for running the tests and the optional live stock prices.
+pytest>=7.0
+# yfinance  # optional: python portfolio.py --live

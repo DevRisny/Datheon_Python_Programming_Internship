@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+*.egg-info/
+.DS_Store
+Thumbs.db
+# files the programs create when you run them
+task2_portfolio/my_portfolio.csv
+demo_downloads/
+**/demo_downloads/
+chat*.txt

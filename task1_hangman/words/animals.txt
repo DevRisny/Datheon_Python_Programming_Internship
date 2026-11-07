@@ -1,0 +1,26 @@
+# Animals
+elephant
+giraffe
+kangaroo
+dolphin
+penguin
+leopard
+peacock
+crocodile
+butterfly
+octopus
+squirrel
+flamingo
+tortoise
+hedgehog
+cheetah
+chameleon
+porcupine
+rhinoceros
+salamander
+jellyfish
+falcon
+otter
+zebra
+panda
+koala

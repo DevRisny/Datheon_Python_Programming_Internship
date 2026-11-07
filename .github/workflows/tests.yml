@@ -1,0 +1,43 @@
+name: Tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Python ${{ matrix.python }} on ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.9', '3.11', '3.13']
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m pip install pytest
+      - name: Task 1 · Hangman
+        run: python -m pytest task1_hangman -q
+      - name: Task 2 · Stock Portfolio Tracker
+        run: python -m pytest task2_portfolio -q
+      - name: Task 3 · File Organizer
+        run: python -m pytest task3_file_organizer -q
+      - name: Task 4 · Chatbot
+        run: python -m pytest task4_chatbot -q
+      - name: Smoke run of every program
+        shell: bash
+        env:
+          PYTHONIOENCODING: utf-8
+        run: |
+          printf 'e\nquit\n' | python task1_hangman/hangman.py --word python --no-clear --stats-file stats.json
+          python task2_portfolio/portfolio.py --demo --out out
+          cd out && python ../task3_file_organizer/organizer.py --demo && cd ..
+          python task4_chatbot/chatbot.py --ask "How do I submit and is it free?"
